@@ -11,6 +11,7 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.witbit.sherlock.autopager.AutoViewPagerActivity;
 import com.witbit.sherlock.recyclerview.MyRecyclerViewActivity;
 import com.witbit.sherlock.tabs.TabFragmentActivity;
 
@@ -36,9 +37,9 @@ public class MainActivity extends Activity {
     }
 
     private void initData() {
-        data.add(newIntent("change skin", ChangeSkinActivity.class));
         data.add(newIntent("fragment tabs", TabFragmentActivity.class));
         data.add(newIntent("RecyclerView", MyRecyclerViewActivity.class));
+        data.add(newIntent("AutoViewPagerActivity", AutoViewPagerActivity.class));
 
     }
 

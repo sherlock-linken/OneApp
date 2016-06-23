@@ -17,9 +17,10 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ChangeSkinActivity"/>
         <activity android:name="com.witbit.sherlock.tabs.TabFragmentActivity"/>
         <activity android:name="com.witbit.sherlock.recyclerview.MyRecyclerViewActivity">
+        </activity>
+        <activity android:name="com.witbit.sherlock.autopager.AutoViewPagerActivity">
         </activity>
     </application>
 
