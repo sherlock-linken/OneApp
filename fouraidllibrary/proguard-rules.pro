@@ -1,6 +1,6 @@
 # Add project specific ProGuard rules here.
 # By default, the flags in this file are appended to flags specified
-# in /Users/sherlock/Development/sdk for android studio/tools/proguard/proguard-android.txt
+# in /Users/sherlock/Development/asSDK/tools/proguard/proguard-android.txt
 # You can edit the include path and order by changing the proguardFiles
 # directive in build.gradle.
 #
@@ -15,6 +15,3 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
-
--dontwarn com.iflytek.autoupdate.**
--keep class com.iflytek.autoupdate.** { *;}

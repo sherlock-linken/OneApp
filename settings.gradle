@@ -1,1 +1,1 @@
-include ':app', ':Android-ViewPagerIndicator'
+include ':app', ':Android-ViewPagerIndicator', ':threelibrary', ':fouraidllibrary'

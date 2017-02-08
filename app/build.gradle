@@ -8,21 +8,65 @@ android {
         applicationId "com.witbit.sherlock.oneapp"
         minSdkVersion 14
         targetSdkVersion 22
-        versionCode 1
-        versionName "1.0"
+        versionCode 110
+        versionName "1.1.0"
+        multiDexEnabled true
     }
+
+    signingConfigs {
+        release {// 自己的签名文件
+            storeFile file("oneApp.jks")
+            storePassword "sherlock"
+            keyAlias "oneApp"
+            keyPassword "sherlock"
+        }
+    }
+
     buildTypes {
         release {
+            zipAlignEnabled true
+            shrinkResources true
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug{
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    productFlavors {
+
+        c001 {
+            manifestPlaceholders = [CHANNEL_VALUE: "c001"]
+        }
+
+        c002 {
+            manifestPlaceholders = [CHANNEL_VALUE: "c002"]
+        }
+
+        c003 {
+            manifestPlaceholders = [CHANNEL_VALUE: "c003"]
+        }
+
+        c004 {
+            manifestPlaceholders = [CHANNEL_VALUE: "c004"]
+        }
+
+        c000 {
+            manifestPlaceholders = [CHANNEL_VALUE: ""]
         }
     }
 }
 
 dependencies {
-    compile 'com.zhy:changeskin:4.0.2'
-    compile 'com.android.support:design:23.3.0'
-    compile 'com.android.support:support-v4:23.3.0'
-    compile 'com.android.support:recyclerview-v7:23.3.0'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':Android-ViewPagerIndicator')
+    compile 'com.zhy:changeskin:4.0.2'
+    //    compile 'com.android.support:design:23.4.0'
+    //    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.android.support:support-v4:23.0.1'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.huxq17.xrefreshview:xrefreshview:3.1.0'
 }

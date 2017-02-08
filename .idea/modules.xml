@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/Android-ViewPagerIndicator/Android-ViewPagerIndicator.iml" filepath="$PROJECT_DIR$/Android-ViewPagerIndicator/Android-ViewPagerIndicator.iml" />
       <module fileurl="file://$PROJECT_DIR$/OneApp.iml" filepath="$PROJECT_DIR$/OneApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fouraidllibrary/fouraidllibrary.iml" filepath="$PROJECT_DIR$/fouraidllibrary/fouraidllibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/threelibrary/threelibrary.iml" filepath="$PROJECT_DIR$/threelibrary/threelibrary.iml" />
     </modules>
   </component>
 </project>

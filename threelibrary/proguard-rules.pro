@@ -1,6 +1,6 @@
 # Add project specific ProGuard rules here.
 # By default, the flags in this file are appended to flags specified
-# in /Users/sherlock/Development/sdk for android studio/tools/proguard/proguard-android.txt
+# in /Users/sherlock/Development/asSDK/tools/proguard/proguard-android.txt
 # You can edit the include path and order by changing the proguardFiles
 # directive in build.gradle.
 #
@@ -16,5 +16,20 @@
 #   public *;
 #}
 
--dontwarn com.iflytek.autoupdate.**
--keep class com.iflytek.autoupdate.** { *;}
+-libraryjars '/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar'
+
+-libraryjars '/Users/sherlock/Development/asSDK/platforms/android-19/android.jar'
+
+-optimizationpasses 5
+
+-dontusemixedcaseclassnames
+
+# -keep public class * extends android.app.Activity
+
+-keep class com.sherlock.threelibrary.pub.* {
+
+public <fields>;
+
+public <methods>;
+
+}

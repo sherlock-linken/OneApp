@@ -2,6 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.witbit.sherlock.oneapp">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <!-- 如果需要精确定位的话请加上此权限 -->
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -17,10 +26,31 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.witbit.sherlock.tabs.TabFragmentActivity"/>
-        <activity android:name="com.witbit.sherlock.recyclerview.MyRecyclerViewActivity">
+        <activity android:name="com.witbit.sherlock.xfupdate.XFUpdateActivity">
         </activity>
-        <activity android:name="com.witbit.sherlock.autopager.AutoViewPagerActivity">
+
+        <meta-data
+            android:name="IFLYTEK_APPKEY"
+            android:value="&apos;57d61fe1&apos;"/>
+        <meta-data
+            android:name="IFLYTEK_CHANNEL"
+            android:value="${CHANNEL_VALUE}"/>
+
+        <activity android:name="com.iflytek.autoupdate.IFlytekUpdateDialog"/>
+
+        <service android:name="com.iflytek.autoupdate.IFlytekDownloadService"/>
+
+        <activity android:name="com.witbit.sherlock.gdtad.GDTActivity">
+        </activity>
+
+        <service
+            android:name="com.qq.e.comm.DownloadService"
+            android:exported="false"/>
+
+        <activity
+            android:name="com.qq.e.ads.ADActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.witbit.sherlock.wifi.WifiSettingActivity">
         </activity>
     </application>
 
