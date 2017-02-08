@@ -12,6 +12,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.witbit.sherlock.gdtad.GDTActivity;
+import com.witbit.sherlock.screenadjust.ScreenAdjustActivity;
 import com.witbit.sherlock.xfupdate.XFUpdateActivity;
 
 import java.util.ArrayList;
@@ -39,6 +40,7 @@ public class MainActivity extends Activity {
 	private void initData() {
 		data.add(newIntent("updateActivity", XFUpdateActivity.class));
 		data.add(newIntent("gdtad", GDTActivity.class));
+		data.add(newIntent("screen adjust", ScreenAdjustActivity.class));
 	}
 
 	private Intent newIntent(String name, Class clazz) {

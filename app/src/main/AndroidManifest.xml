@@ -52,6 +52,8 @@
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"/>
         <activity android:name="com.witbit.sherlock.wifi.WifiSettingActivity">
         </activity>
+        <activity android:name="com.witbit.sherlock.screenadjust.ScreenAdjustActivity">
+        </activity>
     </application>
 
 </manifest>

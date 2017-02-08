@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_screen_adjust"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.witbit.sherlock.screenadjust.ScreenAdjustActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="show size here"/>
+
+        <Button
+            android:id="@+id/get_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取界面尺寸"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/y100"
+            android:layout_marginRight="6dp"
+            android:background="#000000"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/y200"
+            android:layout_marginRight="6dp"
+            android:background="#000000"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/y300"
+            android:layout_marginRight="6dp"
+            android:background="#000000"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/y400"
+            android:layout_marginRight="6dp"
+            android:background="#000000"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/y500"
+            android:layout_marginRight="6dp"
+            android:background="#000000"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/y600"
+            android:layout_marginRight="6dp"
+            android:background="#000000"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/y700"
+            android:layout_marginRight="6dp"
+            android:background="#000000"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/y800"
+            android:layout_marginRight="6dp"
+            android:background="#000000"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/y900"
+            android:layout_marginRight="6dp"
+            android:background="#000000"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/y1000"
+            android:layout_marginRight="6dp"
+            android:background="#000000"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="1840px"
+            android:layout_marginRight="6dp"
+            android:background="#000000"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="1845px"
+            android:layout_marginRight="6dp"
+            android:background="#000000"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="1920px"
+            android:layout_marginRight="6dp"
+            android:background="#000000"/>
+
+        <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="1400px"-->
+            <!--android:layout_marginRight="6dp"-->
+            <!--android:background="#000000"/>-->
+
+        <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="1500px"-->
+            <!--android:layout_marginRight="6dp"-->
+            <!--android:background="#000000"/>-->
+
+        <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="1600px"-->
+            <!--android:layout_marginRight="6dp"-->
+            <!--android:background="#000000"/>-->
+
+        <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="1700px"-->
+            <!--android:layout_marginRight="6dp"-->
+            <!--android:background="#000000"/>-->
+
+        <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="1800px"-->
+            <!--android:layout_marginRight="6dp"-->
+            <!--android:background="#000000"/>-->
+
+    </LinearLayout>
+
+</RelativeLayout>
