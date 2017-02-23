@@ -11,6 +11,7 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.witbit.sherlock.downloadinstall.DownloadInstallActivity;
 import com.witbit.sherlock.gdtad.GDTActivity;
 import com.witbit.sherlock.screenadjust.ScreenAdjustActivity;
 import com.witbit.sherlock.xfupdate.XFUpdateActivity;
@@ -41,6 +42,7 @@ public class MainActivity extends Activity {
 		data.add(newIntent("updateActivity", XFUpdateActivity.class));
 		data.add(newIntent("gdtad", GDTActivity.class));
 		data.add(newIntent("screen adjust", ScreenAdjustActivity.class));
+		data.add(newIntent("Download install", DownloadInstallActivity.class));
 	}
 
 	private Intent newIntent(String name, Class clazz) {

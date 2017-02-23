@@ -54,6 +54,15 @@
         </activity>
         <activity android:name="com.witbit.sherlock.screenadjust.ScreenAdjustActivity">
         </activity>
+        <activity android:name="com.witbit.sherlock.downloadinstall.DownloadInstallActivity">
+        </activity>
+        <receiver android:name="com.witbit.sherlock.downloadinstall.AutoInstallAPKDownloadReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
     </application>
+
+
 
 </manifest>
