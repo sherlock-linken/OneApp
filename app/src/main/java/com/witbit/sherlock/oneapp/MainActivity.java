@@ -11,8 +11,11 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.witbit.sherlock.dagger.DaggerDemoActivity;
 import com.witbit.sherlock.downloadinstall.DownloadInstallActivity;
 import com.witbit.sherlock.gdtad.GDTActivity;
+import com.witbit.sherlock.myretrofit.MyRetrofitActivity;
+import com.witbit.sherlock.myrx.MyRxActivity;
 import com.witbit.sherlock.screenadjust.ScreenAdjustActivity;
 import com.witbit.sherlock.xfupdate.XFUpdateActivity;
 
@@ -43,6 +46,9 @@ public class MainActivity extends Activity {
 		data.add(newIntent("gdtad", GDTActivity.class));
 		data.add(newIntent("screen adjust", ScreenAdjustActivity.class));
 		data.add(newIntent("Download install", DownloadInstallActivity.class));
+		data.add(newIntent("My RxAndroid", MyRxActivity.class));
+		data.add(newIntent("My Retrofit", MyRetrofitActivity.class));
+		data.add(newIntent("Dagger", DaggerDemoActivity.class));
 	}
 
 	private Intent newIntent(String name, Class clazz) {

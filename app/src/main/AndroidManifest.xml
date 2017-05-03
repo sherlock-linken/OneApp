@@ -56,13 +56,22 @@
         </activity>
         <activity android:name="com.witbit.sherlock.downloadinstall.DownloadInstallActivity">
         </activity>
+
         <receiver android:name="com.witbit.sherlock.downloadinstall.AutoInstallAPKDownloadReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
             </intent-filter>
         </receiver>
+
+        <activity android:name="com.witbit.sherlock.myrx.MyRxActivity">
+        </activity>
+        <activity
+            android:name="com.witbit.sherlock.myretrofit.MyRetrofitActivity"
+            android:label="@string/title_activity_my_retrofit"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity android:name="com.witbit.sherlock.dagger.DaggerDemoActivity">
+        </activity>
     </application>
-
-
 
 </manifest>
