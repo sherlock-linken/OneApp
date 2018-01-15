@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/OneApp.iml" filepath="$PROJECT_DIR$/OneApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/fouraidllibrary/fouraidllibrary.iml" filepath="$PROJECT_DIR$/fouraidllibrary/fouraidllibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gamecenterdemo/gamecenterdemo.iml" filepath="$PROJECT_DIR$/gamecenterdemo/gamecenterdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/threelibrary/threelibrary.iml" filepath="$PROJECT_DIR$/threelibrary/threelibrary.iml" />
     </modules>
   </component>

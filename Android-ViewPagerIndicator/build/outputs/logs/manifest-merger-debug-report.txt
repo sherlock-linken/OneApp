@@ -1,0 +1,37 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/sherlock/AndroidStudioProjects/OneApp/Android-ViewPagerIndicator/AndroidManifest.xml:3:1-9:12
+INJECTED from /Users/sherlock/AndroidStudioProjects/OneApp/Android-ViewPagerIndicator/AndroidManifest.xml:3:1-9:12
+INJECTED from /Users/sherlock/AndroidStudioProjects/OneApp/Android-ViewPagerIndicator/AndroidManifest.xml:3:1-9:12
+INJECTED from /Users/sherlock/AndroidStudioProjects/OneApp/Android-ViewPagerIndicator/AndroidManifest.xml:3:1-9:12
+INJECTED from /Users/sherlock/AndroidStudioProjects/OneApp/Android-ViewPagerIndicator/AndroidManifest.xml:3:1-9:12
+INJECTED from /Users/sherlock/AndroidStudioProjects/OneApp/Android-ViewPagerIndicator/AndroidManifest.xml:3:1-9:12
+INJECTED from /Users/sherlock/AndroidStudioProjects/OneApp/Android-ViewPagerIndicator/AndroidManifest.xml:3:1-9:12
+	package
+		ADDED from /Users/sherlock/AndroidStudioProjects/OneApp/Android-ViewPagerIndicator/AndroidManifest.xml:4:5-37
+		INJECTED from /Users/sherlock/AndroidStudioProjects/OneApp/Android-ViewPagerIndicator/AndroidManifest.xml
+		INJECTED from /Users/sherlock/AndroidStudioProjects/OneApp/Android-ViewPagerIndicator/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/sherlock/AndroidStudioProjects/OneApp/Android-ViewPagerIndicator/AndroidManifest.xml:6:5-32
+		INJECTED from /Users/sherlock/AndroidStudioProjects/OneApp/Android-ViewPagerIndicator/AndroidManifest.xml
+		INJECTED from /Users/sherlock/AndroidStudioProjects/OneApp/Android-ViewPagerIndicator/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/sherlock/AndroidStudioProjects/OneApp/Android-ViewPagerIndicator/AndroidManifest.xml:3:11-69
+	android:versionCode
+		ADDED from /Users/sherlock/AndroidStudioProjects/OneApp/Android-ViewPagerIndicator/AndroidManifest.xml:5:5-29
+		INJECTED from /Users/sherlock/AndroidStudioProjects/OneApp/Android-ViewPagerIndicator/AndroidManifest.xml
+		INJECTED from /Users/sherlock/AndroidStudioProjects/OneApp/Android-ViewPagerIndicator/AndroidManifest.xml
+uses-sdk
+ADDED from /Users/sherlock/AndroidStudioProjects/OneApp/Android-ViewPagerIndicator/AndroidManifest.xml:8:5-43
+INJECTED from /Users/sherlock/AndroidStudioProjects/OneApp/Android-ViewPagerIndicator/AndroidManifest.xml:8:5-43
+INJECTED from /Users/sherlock/AndroidStudioProjects/OneApp/Android-ViewPagerIndicator/AndroidManifest.xml:8:5-43
+INJECTED from /Users/sherlock/AndroidStudioProjects/OneApp/Android-ViewPagerIndicator/AndroidManifest.xml:8:5-43
+INJECTED from /Users/sherlock/AndroidStudioProjects/OneApp/Android-ViewPagerIndicator/AndroidManifest.xml:8:5-43
+	android:targetSdkVersion
+		INJECTED from /Users/sherlock/AndroidStudioProjects/OneApp/Android-ViewPagerIndicator/AndroidManifest.xml
+		ADDED from /Users/sherlock/AndroidStudioProjects/OneApp/Android-ViewPagerIndicator/AndroidManifest.xml:8:5-43
+		INJECTED from /Users/sherlock/AndroidStudioProjects/OneApp/Android-ViewPagerIndicator/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /Users/sherlock/AndroidStudioProjects/OneApp/Android-ViewPagerIndicator/AndroidManifest.xml:8:15-40
+		INJECTED from /Users/sherlock/AndroidStudioProjects/OneApp/Android-ViewPagerIndicator/AndroidManifest.xml
+		INJECTED from /Users/sherlock/AndroidStudioProjects/OneApp/Android-ViewPagerIndicator/AndroidManifest.xml

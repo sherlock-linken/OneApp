@@ -5,7 +5,7 @@ android {
     buildToolsVersion androidBuildToolsVersion
 
     defaultConfig {
-        minSdkVersion 19
+        minSdkVersion 15
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
@@ -16,7 +16,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    buildToolsVersion '25.0.0'
+    buildToolsVersion '26.0.2'
 }
 
 task makeJar(type: Copy) {
@@ -24,7 +24,7 @@ task makeJar(type: Copy) {
     from('build/intermediates/bundles/release/')
     into('build/libs/')
     include('classes.jar')
-    rename ('classes.jar', 'mysdk.jar')
+    rename('classes.jar', 'mysdk.jar')
 }
 
 makeJar.dependsOn(build)
@@ -33,6 +33,7 @@ makeJar.dependsOn(build)
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
 }

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.witbit.sherlock.ConstraintLayout.ConstraintLayoutActivity">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/icon"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:src="@drawable/logo2"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/hello"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginTop="0dp"-->
+        <!--android:text="hello world"-->
+        <!--android:textColor="@android:color/black"-->
+        <!--android:textSize="20dp"-->
+        <!--app:layout_constraintLeft_toRightOf="@+id/icon"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/icon"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView3"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginEnd="100dp"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="100dp"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginTop="0dp"-->
+        <!--android:text="content"-->
+        <!--android:textSize="14dp"-->
+        <!--app:layout_constraintLeft_toRightOf="@+id/icon"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/hello"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/asd"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginStart="10dp"-->
+        <!--android:text="asd"-->
+        <!--app:layout_constraintLeft_toRightOf="@+id/textView3"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/textView3"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView4"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginRight="7dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:text="12:34"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"/>-->
+
+
+    <!--<Button-->
+        <!--android:id="@+id/button4"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Button4 Button4 Button4"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/icon"-->
+        <!--app:layout_goneMarginTop="58dp"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button8"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Button"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/button11"-->
+        <!--app:layout_constraintVertical_chainStyle="spread_inside"-->
+        <!--app:layout_constraintHorizontal_chainStyle="spread"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toLeftOf="@+id/button9"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/button4"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button9"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Button"-->
+        <!--app:layout_constraintBottom_toBottomOf="@+id/button8"-->
+        <!--app:layout_constraintLeft_toRightOf="@+id/button8"-->
+        <!--app:layout_constraintRight_toLeftOf="@id/button10"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/button8"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button10"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Button10"-->
+        <!--app:layout_constraintLeft_toRightOf="@id/button9"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="@id/button9"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button11"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Button"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/button8"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/button12"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button12"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:text="Button"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/button11"-->
+        <!--android:layout_marginBottom="50dp"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/guidline_button"/>-->
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:id="@+id/guidline_button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--app:layout_constraintGuide_percent="0.6"/>-->
+
+</android.support.constraint.ConstraintLayout>
