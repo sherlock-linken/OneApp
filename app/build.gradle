@@ -1,13 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion androidBuildToolsVersion
+    namespace "com.witbit.sherlock.oneapp"
+    compileSdkVersion 31
+//    buildToolsVersion androidBuildToolsVersion
 
     defaultConfig {
         applicationId "com.witbit.sherlock.oneapp"
-        minSdkVersion 14
-        targetSdkVersion 22
+        minSdkVersion 21
+        targetSdkVersion 30
         versionCode 110
         versionName "1.1.0"
         multiDexEnabled true
@@ -36,22 +37,47 @@ android {
         }
     }
 
-    buildToolsVersion '26.0.2'
+    compileOptions {
+        incremental = true  //开启增量编译
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+//    buildToolsVersion '26.0.2'
+
+    // 添加以下配置强制使用兼容的依赖版本
+    configurations.all {
+        resolutionStrategy {
+            // 强制使用与 compileSdk 31 兼容的版本
+            force 'androidx.appcompat:appcompat:1.4.2'
+            force 'androidx.appcompat:appcompat-resources:1.4.2'
+            force 'com.google.android.material:material:1.6.1'
+            force 'androidx.emoji2:emoji2:1.0.0'
+            force 'androidx.emoji2:emoji2-views-helper:1.0.0'
+        }
+    }
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(':Android-ViewPagerIndicator')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+//    implementation project(':Android-ViewPagerIndicator')
 
-    compile 'com.zhy:changeskin:4.0.2'
-    compile 'com.android.support:support-v4:23.4.0'
-    compile 'com.android.support:recyclerview-v7:23.4.0'
-    compile 'com.huxq17.xrefreshview:xrefreshview:3.1.0'
-    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
-    compile 'io.reactivex.rxjava2:rxjava:2.0.1'
-    compile 'com.squareup.retrofit2:retrofit:2.1.0'
-    compile 'com.android.support:design:23.4.0'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.google.dagger:dagger:2.10'
-    annotationProcessor 'com.google.dagger:dagger-compiler:2.10'
+    // 替换 Android Support 库为 AndroidX
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // 更新 RxJava 和 Retrofit
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.21'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+
+    // 更新 Dagger 到支持 AndroidX 的版本
+    implementation 'com.google.dagger:dagger:2.44.2'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.44.2'
+
+    // 移除 javax.annotation-api，使用 AndroidX 注解
+    implementation 'androidx.annotation:annotation:1.6.0'
+
 }

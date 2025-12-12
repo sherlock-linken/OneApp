@@ -1,1 +1,1 @@
-include ':app', ':Android-ViewPagerIndicator', ':threelibrary', ':fouraidllibrary', ':gamecenterdemo'
+include ':app', ':threelibrary', ':fouraidllibrary', ':gamecenterdemo'

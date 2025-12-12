@@ -2,6 +2,7 @@ apply plugin: 'com.android.library'
 
 
 android {
+    namespace "com.viewpagerindicator"
     compileSdkVersion 23
     buildToolsVersion "22.0.1"
 
@@ -35,14 +36,16 @@ android {
         debug.setRoot('build-types/debug')
         release.setRoot('build-types/release')
     }
-    buildToolsVersion androidBuildToolsVersion
+//    buildToolsVersion androidBuildToolsVersion
     buildToolsVersion '26.0.2'
 }
 
 dependencies {
-    compile fileTree(include: '*.jar', dir: 'libs')
+    implementation fileTree(include: '*.jar', dir: 'libs')
 
-    compile "com.android.support:support-v4:23.1.1"
+//    implementation "com.android.support:support-v4:23.1.1"
+    implementation 'androidx.viewpager:viewpager:1.0.0'
+
 }
 
 version = '1.0'

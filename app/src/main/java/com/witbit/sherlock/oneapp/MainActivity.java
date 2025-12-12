@@ -1,6 +1,5 @@
 package com.witbit.sherlock.oneapp;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,22 +10,13 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.witbit.sherlock.ConstraintLayout.ConstraintLayoutActivity;
-import com.witbit.sherlock.animation.MyAnimationActivity;
-import com.witbit.sherlock.behavior.BehaviorActivity;
-import com.witbit.sherlock.dagger.DaggerDemoActivity;
-import com.witbit.sherlock.downloadinstall.DownloadInstallActivity;
-import com.witbit.sherlock.gdtad.GDTActivity;
-import com.witbit.sherlock.myretrofit.MyRetrofitActivity;
-import com.witbit.sherlock.myrx.MyRxActivity;
-import com.witbit.sherlock.screenadjust.ScreenAdjustActivity;
-import com.witbit.sherlock.textview.TextViewActivity;
-import com.witbit.sherlock.xfupdate.XFUpdateActivity;
+import androidx.fragment.app.FragmentActivity;
+
 
 import java.util.ArrayList;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends FragmentActivity {
 	private ArrayList<Intent> data = new ArrayList<>();
 	private Context mContext;
 
@@ -46,17 +36,17 @@ public class MainActivity extends Activity {
 	}
 
 	private void initData() {
-		data.add(newIntent("updateActivity", XFUpdateActivity.class));
-		data.add(newIntent("gdtad", GDTActivity.class));
-		data.add(newIntent("screen adjust", ScreenAdjustActivity.class));
-		data.add(newIntent("Download install", DownloadInstallActivity.class));
-		data.add(newIntent("My RxAndroid", MyRxActivity.class));
-		data.add(newIntent("My Retrofit", MyRetrofitActivity.class));
-		data.add(newIntent("Dagger", DaggerDemoActivity.class));
-		data.add(newIntent("ConstraintLayout Activity", ConstraintLayoutActivity.class));
-		data.add(newIntent("textview test Activity", TextViewActivity.class));
-		data.add(newIntent("animation test Activity", MyAnimationActivity.class));
-		data.add(newIntent("Behavior Activity", BehaviorActivity.class));
+		data.add(newIntent("updateActivity", MainActivity.class));
+//		data.add(newIntent("gdtad", GDTActivity.class));
+//		data.add(newIntent("screen adjust", ScreenAdjustActivity.class));
+//		data.add(newIntent("Download install", DownloadInstallActivity.class));
+//		data.add(newIntent("My RxAndroid", MyRxActivity.class));
+//		data.add(newIntent("My Retrofit", MyRetrofitActivity.class));
+//		data.add(newIntent("Dagger", DaggerDemoActivity.class));
+//		data.add(newIntent("ConstraintLayout Activity", ConstraintLayoutActivity.class));
+//		data.add(newIntent("textview test Activity", TextViewActivity.class));
+//		data.add(newIntent("animation test Activity", MyAnimationActivity.class));
+//		data.add(newIntent("Behavior Activity", BehaviorActivity.class));
 	}
 
 	private Intent newIntent(String name, Class clazz) {

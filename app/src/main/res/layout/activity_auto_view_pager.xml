@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.witbit.sherlock.autopager.AutoViewPagerActivity">
+    >
 
 
     <RelativeLayout
@@ -42,18 +42,6 @@
                 android:text="asddfsdfs"
                 android:textColor="#FFFFFFFF"/>
 
-            <com.viewpagerindicator.CirclePageIndicator
-                android:id="@+id/indicator"
-                android:layout_width="fill_parent"
-                android:layout_height="15dp"
-                android:layout_below="@+id/tv_focus_title"
-                android:overScrollMode="never"
-                android:paddingBottom="3dp"
-                app:fillColor="#FFDF5F1C"
-                app:gap="13dp"
-                app:pageColor="#FF9F8B79"
-                app:strokeColor="#FFFFFFFF"
-                app:strokeWidth="0dp"/>
         </RelativeLayout>
     </RelativeLayout>
 
