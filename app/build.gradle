@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'org.jetbrains.kotlin.android'
 
 android {
     namespace "com.witbit.sherlock.oneapp"
@@ -43,6 +44,11 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+    // Add Kotlin JVM target configuration
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
 //    buildToolsVersion '26.0.2'
 
     // 添加以下配置强制使用兼容的依赖版本
@@ -75,7 +81,16 @@ dependencies {
 
     // 更新 Dagger 到支持 AndroidX 的版本
     implementation 'com.google.dagger:dagger:2.44.2'
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'androidx.activity:activity:1.5.1'
     annotationProcessor 'com.google.dagger:dagger-compiler:2.44.2'
+
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.5.1"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.5.1"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.5.1"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1"
+    implementation "androidx.lifecycle:lifecycle-viewmodel:2.5.1"
 
     // 移除 javax.annotation-api，使用 AndroidX 注解
     implementation 'androidx.annotation:annotation:1.6.0'
