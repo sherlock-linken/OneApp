@@ -7,4 +7,27 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_my_retrofit">MyRetrofitActivity</string>
+    <string name="title_activity_fade_edge_list">FadeEdgeListActivity</string>
+    <string name="fade_edge_controlled_label">Controlled fading edge</string>
+    <string name="fade_edge_system_label">System fading edge</string>
+
+    <string-array name="fade_edge_card_titles">
+        <item>Alpha</item>
+        <item>Beta</item>
+        <item>Gamma</item>
+        <item>Delta</item>
+        <item>Epsilon</item>
+        <item>Zeta</item>
+        <item>Eta</item>
+    </string-array>
+
+    <string-array name="fade_edge_card_descriptions">
+        <item>Horizontal card 01</item>
+        <item>Horizontal card 02</item>
+        <item>Horizontal card 03</item>
+        <item>Horizontal card 04</item>
+        <item>Horizontal card 05</item>
+        <item>Horizontal card 06</item>
+        <item>Horizontal card 07</item>
+    </string-array>
 </resources>

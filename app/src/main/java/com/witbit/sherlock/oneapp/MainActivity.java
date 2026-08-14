@@ -13,6 +13,7 @@ import android.widget.TextView;
 import androidx.fragment.app.FragmentActivity;
 
 
+import com.witbit.sherlock.fade_edge_list.FadeEdgeListActivity;
 import com.witbit.sherlock.single_picker.SinglePickerActivity;
 
 import java.util.ArrayList;
@@ -39,6 +40,7 @@ public class MainActivity extends FragmentActivity {
 
     private void initData() {
         data.add(newIntent("SinglePickerActivity", SinglePickerActivity.class));
+        data.add(newIntent(getString(R.string.title_activity_fade_edge_list), FadeEdgeListActivity.class));
 //		data.add(newIntent("gdtad", GDTActivity.class));
 //		data.add(newIntent("screen adjust", ScreenAdjustActivity.class));
 //		data.add(newIntent("Download install", DownloadInstallActivity.class));

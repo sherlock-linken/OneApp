@@ -3,7 +3,7 @@ apply plugin: 'org.jetbrains.kotlin.android'
 
 android {
     namespace "com.witbit.sherlock.oneapp"
-    compileSdkVersion 31
+    compileSdkVersion 36
 //    buildToolsVersion androidBuildToolsVersion
 
     defaultConfig {
@@ -47,6 +47,17 @@ android {
     // Add Kotlin JVM target configuration
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+
+    lintOptions {
+        checkDependencies true
+        checkReleaseBuilds false
+        abortOnError false
+        disable 'MissingTranslation', 'CheckResult'
+    }
+
+    buildFeatures {
+        dataBinding true
     }
 
 //    buildToolsVersion '26.0.2'

@@ -1,11 +1,12 @@
 package com.sherlock.threelibrary.pub;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import androidx.fragment.app.FragmentActivity;
 
 import com.sherlock.threelibrary.R;
 
-public class LibMainActivity extends AppCompatActivity {
+public class LibMainActivity extends FragmentActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

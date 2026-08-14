@@ -17,6 +17,9 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
+            android:name="com.witbit.sherlock.fade_edge_list.FadeEdgeListActivity"
+            android:exported="false" />
+        <activity
             android:name="com.witbit.sherlock.single_picker.SinglePickerActivity"
             android:exported="false" />
         <activity

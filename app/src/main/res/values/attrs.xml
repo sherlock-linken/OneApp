@@ -5,4 +5,11 @@
 		<attr name="target" format="reference"/>
 	</declare-styleable>
 
+        <declare-styleable name="WheelPicker">
+            <attr name="wheelTextSize" format="dimension" />
+            <attr name="wheelItemHeight" format="dimension" />
+            <attr name="wheelCircular" format="boolean" />
+            <attr name="wheelItems" format="reference" />
+        </declare-styleable>
+
 </resources>
